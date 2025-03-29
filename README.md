@@ -1,4 +1,4 @@
-# Magic Portfolio
+# My Portfolio
 
 Welcome to **My Portfolio**, a modern and visually appealing portfolio website showcasing projects, skills, and more. Built with cutting-edge technologies, this portfolio is designed to leave a lasting impression.
 
