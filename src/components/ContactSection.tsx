@@ -3,6 +3,11 @@ import { motion } from 'framer-motion';
 import { Mail as MailIcon, Linkedin as LinkedinIcon, Github as GithubIcon, Send as SendIcon } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
+// Helper function to safely access environment variables
+const getEnvVariable = (key: string, defaultValue: string = '') => {
+  return import.meta.env[key] || defaultValue;
+};
+
 export const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -14,7 +19,7 @@ export const ContactSection = () => {
 
   useEffect(() => {
     // Initialize EmailJS with your public key
-    emailjs.init('NC6y4xC4L1PhNDUIz');
+    emailjs.init(getEnvVariable('VITE_EMAILJS_PUBLIC_KEY'));
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -32,10 +37,10 @@ export const ContactSection = () => {
       };
 
       await emailjs.send(
-        'service_sn70fll',
-        'template_0erj89d',
+        getEnvVariable('VITE_EMAILJS_SERVICE_ID'),
+        getEnvVariable('VITE_EMAILJS_TEMPLATE_ID'),
         templateParams,
-        'NC6y4xC4L1PhNDUIz'
+        getEnvVariable('VITE_EMAILJS_PUBLIC_KEY')
       );
 
       setSubmitStatus('success');
