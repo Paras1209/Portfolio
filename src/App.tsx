@@ -6,6 +6,7 @@ import { AboutSection } from './components/AboutSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { SkillsSection } from './components/SkillsSection';
 import { ContactSection } from './components/ContactSection';
+import { Analytics } from "@vercel/analytics/react"
 export function App() {
   return <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <ParticleBackground />
@@ -15,6 +16,7 @@ export function App() {
         <ProjectsSection />
         <SkillsSection />
         <ContactSection />
+        <Analytics/>
       </main>
     </div>;
 }
