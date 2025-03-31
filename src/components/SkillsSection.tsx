@@ -15,7 +15,6 @@ export const SkillsSection = () => {
       name: 'Javascript',
       level: 85
     }, {
-    }, {
       name: 'Tailwind CSS',
       level: 85
     },{
@@ -36,7 +35,7 @@ export const SkillsSection = () => {
       level: 20
     }, {
       name: 'Data Analysis',
-      level: 50
+      level: 30
     }]
   }, {
     icon: DatabaseIcon,
