@@ -9,8 +9,7 @@ export const ProjectsSection = () => {
     tech: ['Python', 'TensorFlow', 'React', 'Flask'],
     status: 'In Progress',
     links: {
-      github: '#',
-      demo: '#'
+      github: 'https://github.com/Paras1209/Image-Generator'
     }
   }, {
     icon: GlobeIcon,
@@ -19,8 +18,7 @@ export const ProjectsSection = () => {
     tech: ['React','Vite'],
     status: 'Completed',
     links: {
-      github: 'https://github.com/Paras1209/Color_picker',
-      demo: '#'
+      github: 'https://github.com/Paras1209/Color_picker'
     }
   }, {
     icon: SmartphoneIcon,
@@ -29,16 +27,16 @@ export const ProjectsSection = () => {
     tech: ['React Native', 'Weather API', 'Geolocation'],
     status: 'Completed',
     links: {
-      github: '#'
+      github: 'https://github.com/Paras1209/Nature-Mood'
     }
   }, {
     icon: CodeIcon,
     title: 'Algorithm Visualizer',
     description: 'Interactive tool for visualizing sorting and pathfinding algorithms',
     tech: ['React', 'TypeScript', 'Framer Motion'],
-    status: 'In Progress',
+    status: 'Completed',
     links: {
-      demo: '#'
+      github: 'https://github.com/Paras1209/Algorithm-Visualiser'
     }
   }, {
     icon: SmartphoneIcon,
@@ -47,8 +45,7 @@ export const ProjectsSection = () => {
     tech: ['React ', 'Mongo Db', 'Redux', 'Node' , 'Postman'],
     status: 'In Progress',
     links: {
-      github: 'https://github.com/Paras1209/uber-clone',
-      demo: '#'
+      github: 'https://github.com/Paras1209/uber-clone'
     }
   }];
   return <section className="min-h-screen flex items-center justify-center px-4 py-20">
@@ -110,7 +107,7 @@ export const ProjectsSection = () => {
                   </motion.span>)}
               </div>
               <div className="flex gap-4">
-                {project.links.github && <motion.a href={project.links.github} className="flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors" whileHover={{
+                {project.links.github && <motion.a href={project.links.github} target='_blank' className="flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors" whileHover={{
               x: 5
             }}>
                     <GithubIcon size={18} />
@@ -134,7 +131,7 @@ export const ProjectsSection = () => {
         delay: 0.6
       }} className="text-center mt-12">
           <p className="text-gray-400 mb-4">More projects coming soon!</p>
-          <motion.a href="#" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors" whileHover={{
+          <motion.a href="https://github.com/Paras1209" target='_blank' className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors" whileHover={{
           x: 5
         }}>
             <GithubIcon size={20} />

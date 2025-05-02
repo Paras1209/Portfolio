@@ -6,7 +6,7 @@ export const SkillsSection = () => {
     icon: CodeIcon,
     title: 'Web Development',
     skills: [{
-      name: 'React & Next.js',
+      name: 'React.js',
       level: 90
     }, {
       name: 'TypeScript',

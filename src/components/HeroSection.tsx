@@ -93,13 +93,15 @@ export const HeroSection = () => {
         }} className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
             View Projects
           </motion.button>
-          <motion.button whileHover={{
-          scale: 1.05
-        }} whileTap={{
-          scale: 0.95
-        }} className="px-8 py-3 border border-cyan-500/30 rounded-full text-cyan-400 font-semibold hover:bg-cyan-500/10 transition-all duration-300">
-            Resume
-          </motion.button>
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <motion.button whileHover={{
+            scale: 1.05
+          }} whileTap={{
+            scale: 0.95
+          }} className="px-8 py-3 border border-cyan-500/30 rounded-full text-cyan-400 font-semibold hover:bg-cyan-500/10 transition-all duration-300">
+              Resume
+            </motion.button>
+          </a>
         </motion.div>
       </div>
       <motion.div className="absolute bottom-10 left-1/2 -translate-x-1/2" animate={{
